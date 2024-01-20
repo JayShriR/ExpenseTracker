@@ -1,0 +1,49 @@
+.ExpenseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: blueviolet;
+  
+}
+.E-I-D {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.ExpenseItem h2 {
+  color: azure;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+}
+.E-I-P {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: bisque;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+@media (min-width: 580px) {
+  .E-I-D {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .E-I-D h2 {
+    font-size: 1.25rem;
+  }
+  .E-I-P {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
